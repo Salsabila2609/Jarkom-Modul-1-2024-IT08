@@ -45,6 +45,8 @@ Sebagai kewajiban untuk laporan, aku diminta untuk mencari tahu berapa kali atte
 - Dilakukan perhitungan manual: `304x3 + 7x2 + 7x1 + 1 = 934`. Input hasil ke terminal dan mendapatkan flag
 ![image](https://github.com/Salsabila2609/Jarkom-Modul-1-2024-IT08/assets/128382995/7266d39f-b0c1-4e55-8494-daf91b1afeca)
 
+---
+
 ### Soal 3: Trace him
 Selain menghitung jumlah packet, coba lacak juga ip penyerang tersebut!
 
@@ -55,6 +57,8 @@ Ditemukan ip attacker yaitu `10.30.3.4` (10.15.40.20 merupakan ip server, jadi i
 
 - Input ip tersebut ke terminal dan mendapatkan flag
 ![image](https://github.com/Salsabila2609/Jarkom-Modul-1-2024-IT08/assets/128382995/aab40a5d-00db-468a-bb32-556ecf351f8c)
+
+---
 
 ### Soal 4: Creds
 Attacker menyadari jika dia bisa membuat clone ftp server dari target, temukan kredensial dari server ftp yang dibuat oleh attacker
@@ -73,6 +77,8 @@ PASS S!l3ncE
 - Input user dan pass tersebut ke terminal dan mendapatkan flag
 ![image](https://github.com/Salsabila2609/Jarkom-Modul-1-2024-IT08/assets/128382995/06bf33b7-1e69-4ca2-96a3-6fd961e53b53)
 
+---
+
 ### Soal 5: malwleowleo
 Dapatkah kamu menemukan file malware yang dikirim oleh attacker melalui ftp?
 
@@ -89,6 +95,8 @@ STOR m4L1c10us_W4re.c
 - Input nama file ke terminal dan mendapatkan flag
 ![image](https://github.com/Salsabila2609/Jarkom-Modul-1-2024-IT08/assets/128382995/6ac7ed59-5f04-48fc-84e2-b07f0be957e9)
 
+---
+
 ### Soal 6: whoami
 Dapatkah kamu menemukan siapa identitas attacker?
 
@@ -101,6 +109,8 @@ Dapatkah kamu menemukan siapa identitas attacker?
 Hasil decode menunjukan identitas attacker yaitu `Paul Atreides`
 - Input nama tersebut ke terminal dan mendapatkan flag
 ![image](https://github.com/Salsabila2609/Jarkom-Modul-1-2024-IT08/assets/128382995/25d0a5d3-a81b-48ef-9c6f-b99affe1dfe9)
+
+---
 
 ### Soal 7: secret
 Temukan pesan rahasia dari attacker.
@@ -117,6 +127,8 @@ Ditemukan pesan rahasia pada gambar, yaitu `MIO MIRZA`
 
 - Input ke terminal dan mendapatkan flag
 ![image](https://github.com/Salsabila2609/Jarkom-Modul-1-2024-IT08/assets/128382995/86555b49-e6cf-4a11-ab20-b910e1c09788)
+
+---
 
 ### Soal 8: evidence
 Perusahaan nanomate baru saja kebobolan. Mereka menyewamu untuk mencari tahu bagaimana caranya pelaku bisa masuk.
@@ -146,6 +158,8 @@ email:pass - `tareq@gmail.com:tareq@nanomate`
 - Input ke terminal dan mendapatkan flag
 ![image](https://github.com/Salsabila2609/Jarkom-Modul-1-2024-IT08/assets/128382995/7c002aa5-0508-415b-b5c0-eed15a2240ad)
 
+---
+
 ### Soal 9: fuzz
 My website got hacked. Can you analyze this network traffic to help me track the attacker?
 
@@ -158,6 +172,8 @@ port - `80` karena `http`
 path - `/`
 
 toolsname-version - `ffuf-v2.0.0-dev`
+
+---
 
 username:password - `admin:sUp3rSecretp@ssw0rd`
 
