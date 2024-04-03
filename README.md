@@ -11,6 +11,9 @@
 Pradityo mencoba mengembangkan server ftp, tetapi seseorang mencoba melakukan bruteforce login, bisakah Anda menganalisis apa yang terjadi?
 
 - Gunakan filter untuk packet details, setting filter menggunakan format string, lalu input `Login successful` karena perlu mencari password yang berhasil digunakan untuk login
+
+![image](https://github.com/Salsabila2609/Jarkom-Modul-1-2024-IT08/assets/128382995/aaa3eb98-2f9c-426d-af7f-0cfa22713fff)
+
 Ditemukan packet details pada stream 319 berisi:
 ```
 USER adminJarkom
@@ -19,15 +22,26 @@ PASS m4y_th3_Kn!fe_ch1p_&_sh4tter
 230 Login successful.
 ```
 - Input password tersebut ke terminal dan mendapatkan flag
+  
+![image](https://github.com/Salsabila2609/Jarkom-Modul-1-2024-IT08/assets/128382995/9d779c9b-0e70-42c9-8092-af364d43ab16)
 
 #### Soal 2: How Many Packets ?
 Sebagai kewajiban untuk laporan, aku diminta untuk mencari tahu berapa kali attempt login yang dilakukan oleh hacker. Dapatkah kamu membantuku untuk menganalisanya?
 
 - Untuk stream 1-304, terdapat 3 attempt login di tiap stream
+![image](https://github.com/Salsabila2609/Jarkom-Modul-1-2024-IT08/assets/128382995/543978b4-02e0-42b0-b86b-d7ee1ac08127)
+
 - Untuk stream 305-311, terdapat 2 attempt login di tiap stream
+![image](https://github.com/Salsabila2609/Jarkom-Modul-1-2024-IT08/assets/128382995/7f9f85fe-ca65-41f8-9c48-8669011e896b)
+
 - Untuk stream 312-318, terdapat 1 attempt login di tiap stream
+![image](https://github.com/Salsabila2609/Jarkom-Modul-1-2024-IT08/assets/128382995/ea869fcc-67f3-4231-911e-59dd7090b46b)
+
 - Untuk stream 319, terdapat 1 attempt login yang sukses
+![image](https://github.com/Salsabila2609/Jarkom-Modul-1-2024-IT08/assets/128382995/eb8c2da5-a319-4f80-841d-dc4516b802b6)
+
 - Dilakukan perhitungan manual: `304x3 + 7x2 + 7x1 + 1 = 934`. Input hasil ke terminal dan mendapatkan flag
+![image](https://github.com/Salsabila2609/Jarkom-Modul-1-2024-IT08/assets/128382995/7266d39f-b0c1-4e55-8494-daf91b1afeca)
 
 #### Soal 3: Trace him
 Selain menghitung jumlah packet, coba lacak juga ip penyerang tersebut!
