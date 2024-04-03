@@ -173,9 +173,9 @@ path - `/`
 
 toolsname-version - `ffuf-v2.0.0-dev`
 
----
-
 username:password - `admin:sUp3rSecretp@ssw0rd`
 
 - Input ke terminal dan mendapatkan flag
 ![image](https://github.com/Salsabila2609/Jarkom-Modul-1-2024-IT08/assets/128382995/56cbf488-195d-4c02-9348-119ec7586ada)
+
+---
