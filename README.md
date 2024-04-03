@@ -75,7 +75,7 @@ PASS S!l3ncE
 230 Login successful.
 ```
 - Input user dan pass tersebut ke terminal dan mendapatkan flag
-![image](https://github.com/Salsabila2609/Jarkom-Modul-1-2024-IT08/assets/128382995/06bf33b7-1e69-4ca2-96a3-6fd961e53b53)
+![Screenshot 2024-04-03 165358](https://github.com/Salsabila2609/Jarkom-Modul-1-2024-IT08/assets/128382995/c688c3b7-847d-4cc4-800e-ff3b7290281a)
 
 ---
 
