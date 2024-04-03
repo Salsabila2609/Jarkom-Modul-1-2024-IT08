@@ -7,7 +7,7 @@
 
 ## Laporan Resmi Modul 1
 
-#### Soal 1: ATM or ATP or FTP ? 🤔
+### Soal 1: ATM or ATP or FTP ? 🤔
 Pradityo mencoba mengembangkan server ftp, tetapi seseorang mencoba melakukan bruteforce login, bisakah Anda menganalisis apa yang terjadi?
 
 - Gunakan filter untuk packet details, setting filter menggunakan format string, lalu input `Login successful` karena perlu mencari password yang berhasil digunakan untuk login
@@ -25,7 +25,9 @@ PASS m4y_th3_Kn!fe_ch1p_&_sh4tter
   
 ![image](https://github.com/Salsabila2609/Jarkom-Modul-1-2024-IT08/assets/128382995/9d779c9b-0e70-42c9-8092-af364d43ab16)
 
-#### Soal 2: How Many Packets ?
+---
+
+### Soal 2: How Many Packets ?
 Sebagai kewajiban untuk laporan, aku diminta untuk mencari tahu berapa kali attempt login yang dilakukan oleh hacker. Dapatkah kamu membantuku untuk menganalisanya?
 
 - Untuk stream 1-304, terdapat 3 attempt login di tiap stream
@@ -43,7 +45,7 @@ Sebagai kewajiban untuk laporan, aku diminta untuk mencari tahu berapa kali atte
 - Dilakukan perhitungan manual: `304x3 + 7x2 + 7x1 + 1 = 934`. Input hasil ke terminal dan mendapatkan flag
 ![image](https://github.com/Salsabila2609/Jarkom-Modul-1-2024-IT08/assets/128382995/7266d39f-b0c1-4e55-8494-daf91b1afeca)
 
-#### Soal 3: Trace him
+### Soal 3: Trace him
 Selain menghitung jumlah packet, coba lacak juga ip penyerang tersebut!
 
 - Gunakan filter untuk packet details, setting filter menggunakan format string, lalu input `Login incorrect` karena perlu mencari ip attacker yang melakukan login attempt
@@ -54,7 +56,7 @@ Ditemukan ip attacker yaitu `10.30.3.4` (10.15.40.20 merupakan ip server, jadi i
 - Input ip tersebut ke terminal dan mendapatkan flag
 ![image](https://github.com/Salsabila2609/Jarkom-Modul-1-2024-IT08/assets/128382995/aab40a5d-00db-468a-bb32-556ecf351f8c)
 
-#### Soal 4: Creds
+### Soal 4: Creds
 Attacker menyadari jika dia bisa membuat clone ftp server dari target, temukan kredensial dari server ftp yang dibuat oleh attacker
 
 - Gunakan filter untuk packet details, setting filter menggunakan format string, lalu input `Successful` karena perlu mencari username dan password yang berhasil digunakan untuk login
@@ -71,7 +73,7 @@ PASS S!l3ncE
 - Input user dan pass tersebut ke terminal dan mendapatkan flag
 ![image](https://github.com/Salsabila2609/Jarkom-Modul-1-2024-IT08/assets/128382995/06bf33b7-1e69-4ca2-96a3-6fd961e53b53)
 
-#### Soal 5: malwleowleo
+### Soal 5: malwleowleo
 Dapatkah kamu menemukan file malware yang dikirim oleh attacker melalui ftp?
 
 - Pada stream 2 yang berisi user dan password login attacker pada soal creds, ditemukan pengiriman file malware oleh attacker
@@ -87,7 +89,7 @@ STOR m4L1c10us_W4re.c
 - Input nama file ke terminal dan mendapatkan flag
 ![image](https://github.com/Salsabila2609/Jarkom-Modul-1-2024-IT08/assets/128382995/6ac7ed59-5f04-48fc-84e2-b07f0be957e9)
 
-#### Soal 6: whoami
+### Soal 6: whoami
 Dapatkah kamu menemukan siapa identitas attacker?
 
 - Follow TCP stream untuk melihat seluruh packet details, disini ditemukan hal menarik dalam format base64 pada stream 7
@@ -100,7 +102,7 @@ Hasil decode menunjukan identitas attacker yaitu `Paul Atreides`
 - Input nama tersebut ke terminal dan mendapatkan flag
 ![image](https://github.com/Salsabila2609/Jarkom-Modul-1-2024-IT08/assets/128382995/25d0a5d3-a81b-48ef-9c6f-b99affe1dfe9)
 
-#### Soal 7: secret
+### Soal 7: secret
 Temukan pesan rahasia dari attacker.
 
 - Follow TCP stream untuk melihat seluruh packet details, disini ditemukan bahwa ada file lain selain dari file malware, dengan nama file `mirza.jpg`
@@ -116,7 +118,7 @@ Ditemukan pesan rahasia pada gambar, yaitu `MIO MIRZA`
 - Input ke terminal dan mendapatkan flag
 ![image](https://github.com/Salsabila2609/Jarkom-Modul-1-2024-IT08/assets/128382995/86555b49-e6cf-4a11-ab20-b910e1c09788)
 
-#### Soal 8: evidence
+### Soal 8: evidence
 Perusahaan nanomate baru saja kebobolan. Mereka menyewamu untuk mencari tahu bagaimana caranya pelaku bisa masuk.
 
 - Gunakan filter untuk packet details, setting filter menggunakan format string, lalu input `Login` karena perlu mencari tahu bagaimana pelaku masuk
@@ -144,7 +146,7 @@ email:pass - `tareq@gmail.com:tareq@nanomate`
 - Input ke terminal dan mendapatkan flag
 ![image](https://github.com/Salsabila2609/Jarkom-Modul-1-2024-IT08/assets/128382995/7c002aa5-0508-415b-b5c0-eed15a2240ad)
 
-#### Soal 9: fuzz
+### Soal 9: fuzz
 My website got hacked. Can you analyze this network traffic to help me track the attacker?
 
 - Gunakan filter dan find keyword `Login` untuk menemukan percobaan login oleh attacker.
