@@ -175,6 +175,7 @@ username:password - `admin:sUp3rSecretp@ssw0rd`
 
 ---
 
-## Kendala
-S1 soal (malwaew) tidak sempat dikerjakan karena keterbatasan waktu pada saat pengerjaan praktikum.
+## Kendala & Komentar Aslab
+- 1 soal (malwaew) tidak sempat dikerjakan karena keterbatasan waktu pada saat pengerjaan praktikum.
+- Untuk export file mirza.jpg bisa dari wireshark langsung ga perlu ke app filezilla
 
