@@ -56,7 +56,6 @@ Ditemukan ip attacker yaitu `10.30.3.4` (10.15.40.20 merupakan ip server, jadi i
 Attacker menyadari jika dia bisa membuat clone ftp server dari target, temukan kredensial dari server ftp yang dibuat oleh attacker
 
 - Gunakan filter `ftp.response.code == 230` untuk menemukan user yang berhasil login
-
 ![image](https://github.com/Salsabila2609/Jarkom-Modul-1-2024-IT08/assets/128382995/cc2f6ef3-d83f-45e1-9028-f610ea9a80cd)
 
 - Buka packet list untuk menemukan informasi detail mengenai username dan password
