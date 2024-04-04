@@ -11,12 +11,10 @@
 Pradityo mencoba mengembangkan server ftp, tetapi seseorang mencoba melakukan bruteforce login, bisakah Anda menganalisis apa yang terjadi?
 
 - Gunakan filter `ftp.response.code == 230` untuk menemukan user yang berhasil login
-
 ![image](https://github.com/Salsabila2609/Jarkom-Modul-1-2024-IT08/assets/128382995/8e504fda-bae3-4a24-936c-7eaf58ff68d1)
 
 - Buka packet details dan ditemukan username serta password yang dicari
-
-![image](https://github.com/Salsabila2609/Jarkom-Modul-1-2024-IT08/assets/128382995/aaa3eb98-2f9c-426d-af7f-0cfa22713fff)
+![image](https://github.com/Salsabila2609/Jarkom-Modul-1-2024-IT08/assets/128382995/87fda6be-3e92-4fa9-8aa4-aab7a6f1ae51)
 
 Ditemukan packet details pada stream 319 berisi:
 ```
@@ -26,7 +24,6 @@ PASS m4y_th3_Kn!fe_ch1p_&_sh4tter
 230 Login successful.
 ```
 - Input password tersebut ke terminal dan mendapatkan flag
-  
 ![image](https://github.com/Salsabila2609/Jarkom-Modul-1-2024-IT08/assets/128382995/9d779c9b-0e70-42c9-8092-af364d43ab16)
 
 ---
@@ -35,7 +32,6 @@ PASS m4y_th3_Kn!fe_ch1p_&_sh4tter
 Sebagai kewajiban untuk laporan, aku diminta untuk mencari tahu berapa kali attempt login yang dilakukan oleh hacker. Dapatkah kamu membantuku untuk menganalisanya?
 
 - Gunakan filter untuk packet details, setting filter menggunakan format string, lalu input `Login`, kemudian klik packet list yang menunjukan status `Login incorrect` dan apply as filter
-  
 ![image](https://github.com/Salsabila2609/Jarkom-Modul-1-2024-IT08/assets/128382995/859621d7-4516-48c3-a872-229d232d72ae)
 
 - Ditemukan total displayed 933, ditambah 1 yang berhasil login, jadi total = `934`, masukkan ke terminal dan mendapatkan flag.. Input hasil ke terminal dan mendapatkan flag
@@ -64,6 +60,7 @@ Attacker menyadari jika dia bisa membuat clone ftp server dari target, temukan k
 ![image](https://github.com/Salsabila2609/Jarkom-Modul-1-2024-IT08/assets/128382995/cc2f6ef3-d83f-45e1-9028-f610ea9a80cd)
 
 - Buka packet list untuk menemukan informasi detail mengenai username dan password
+![image](https://github.com/Salsabila2609/Jarkom-Modul-1-2024-IT08/assets/128382995/eb54d946-a470-4024-9f1e-bf7f5ef49a7d)
 
 Ditemukan packet details pada stream 2 berisi:
 ```
