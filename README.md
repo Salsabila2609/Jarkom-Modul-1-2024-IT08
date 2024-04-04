@@ -178,4 +178,5 @@ username:password - `admin:sUp3rSecretp@ssw0rd`
 ## Kendala & Komentar Aslab
 - 1 soal (malwaew) tidak sempat dikerjakan karena keterbatasan waktu pada saat pengerjaan praktikum.
 - Untuk export file mirza.jpg bisa dari wireshark langsung ga perlu ke app filezilla
+![image](https://github.com/Salsabila2609/Jarkom-Modul-1-IT08-2024/assets/128382995/c67d2d79-3216-4c8e-b03f-3e86cc5c7ad6)
 
