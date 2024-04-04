@@ -151,7 +151,7 @@ server - `apache-2.4.56`
 email:pass - `tareq@gmail.com:tareq@nanomate`
 
 - Input ke terminal dan mendapatkan flag
-![image](https://github.com/Salsabila2609/Jarkom-Modul-1-2024-IT08/assets/128382995/7c002aa5-0508-415b-b5c0-eed15a2240ad)
+![image](https://github.com/Salsabila2609/Jarkom-Modul-1-IT08-2024/assets/128382995/7fe1a40d-bd32-4c80-b517-3c63cd2f1499)
 
 ---
 
@@ -174,3 +174,7 @@ username:password - `admin:sUp3rSecretp@ssw0rd`
 ![image](https://github.com/Salsabila2609/Jarkom-Modul-1-2024-IT08/assets/128382995/56cbf488-195d-4c02-9348-119ec7586ada)
 
 ---
+
+## Kendala
+S1 soal (malwaew) tidak sempat dikerjakan karena keterbatasan waktu pada saat pengerjaan praktikum.
+
