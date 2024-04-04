@@ -10,7 +10,11 @@
 ### Soal 1: ATM or ATP or FTP ? 🤔
 Pradityo mencoba mengembangkan server ftp, tetapi seseorang mencoba melakukan bruteforce login, bisakah Anda menganalisis apa yang terjadi?
 
-- Gunakan filter untuk packet details, setting filter menggunakan format string, lalu input `Login successful` karena perlu mencari password yang berhasil digunakan untuk login
+- Gunakan filter `ftp.response.code == 230` untuk menemukan user yang berhasil login
+
+![image](https://github.com/Salsabila2609/Jarkom-Modul-1-2024-IT08/assets/128382995/8e504fda-bae3-4a24-936c-7eaf58ff68d1)
+
+- Buka packet details dan ditemukan username serta password yang dicari
 
 ![image](https://github.com/Salsabila2609/Jarkom-Modul-1-2024-IT08/assets/128382995/aaa3eb98-2f9c-426d-af7f-0cfa22713fff)
 
@@ -30,19 +34,11 @@ PASS m4y_th3_Kn!fe_ch1p_&_sh4tter
 ### Soal 2: How Many Packets ?
 Sebagai kewajiban untuk laporan, aku diminta untuk mencari tahu berapa kali attempt login yang dilakukan oleh hacker. Dapatkah kamu membantuku untuk menganalisanya?
 
-- Untuk stream 1-304, terdapat 3 attempt login di tiap stream
-![image](https://github.com/Salsabila2609/Jarkom-Modul-1-2024-IT08/assets/128382995/543978b4-02e0-42b0-b86b-d7ee1ac08127)
+- Gunakan filter untuk packet details, setting filter menggunakan format string, lalu input `Login`, kemudian klik packet list yang menunjukan status `Login incorrect` dan apply as filter
+  
+![image](https://github.com/Salsabila2609/Jarkom-Modul-1-2024-IT08/assets/128382995/859621d7-4516-48c3-a872-229d232d72ae)
 
-- Untuk stream 305-311, terdapat 2 attempt login di tiap stream
-![image](https://github.com/Salsabila2609/Jarkom-Modul-1-2024-IT08/assets/128382995/7f9f85fe-ca65-41f8-9c48-8669011e896b)
-
-- Untuk stream 312-318, terdapat 1 attempt login di tiap stream
-![image](https://github.com/Salsabila2609/Jarkom-Modul-1-2024-IT08/assets/128382995/ea869fcc-67f3-4231-911e-59dd7090b46b)
-
-- Untuk stream 319, terdapat 1 attempt login yang sukses
-![image](https://github.com/Salsabila2609/Jarkom-Modul-1-2024-IT08/assets/128382995/eb8c2da5-a319-4f80-841d-dc4516b802b6)
-
-- Dilakukan perhitungan manual: `304x3 + 7x2 + 7x1 + 1 = 934`. Input hasil ke terminal dan mendapatkan flag
+- Ditemukan total displayed 933, ditambah 1 yang berhasil login, jadi total = `934`, masukkan ke terminal dan mendapatkan flag.. Input hasil ke terminal dan mendapatkan flag
 ![image](https://github.com/Salsabila2609/Jarkom-Modul-1-2024-IT08/assets/128382995/7266d39f-b0c1-4e55-8494-daf91b1afeca)
 
 ---
@@ -63,8 +59,11 @@ Ditemukan ip attacker yaitu `10.30.3.4` (10.15.40.20 merupakan ip server, jadi i
 ### Soal 4: Creds
 Attacker menyadari jika dia bisa membuat clone ftp server dari target, temukan kredensial dari server ftp yang dibuat oleh attacker
 
-- Gunakan filter untuk packet details, setting filter menggunakan format string, lalu input `Successful` karena perlu mencari username dan password yang berhasil digunakan untuk login
-![image](https://github.com/Salsabila2609/Jarkom-Modul-1-2024-IT08/assets/128382995/ef60dd8e-cd0f-4483-a445-b59944788a17)
+- Gunakan filter `ftp.response.code == 230` untuk menemukan user yang berhasil login
+
+![image](https://github.com/Salsabila2609/Jarkom-Modul-1-2024-IT08/assets/128382995/cc2f6ef3-d83f-45e1-9028-f610ea9a80cd)
+
+- Buka packet list untuk menemukan informasi detail mengenai username dan password
 
 Ditemukan packet details pada stream 2 berisi:
 ```
